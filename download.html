@@ -38,7 +38,7 @@
     <p class="eyebrow">Free · Windows and Mac</p>
     <h1>Download Topside</h1>
     <p class="lead">Tacheo Topside, the companion program for the Tacheo, with CartoTable built in for cave survey data, cartography and GIS. You don't need a Tacheo to use either.</p>
-    <p class="ver" id="ver">Current version: <b>1.6.77</b> · 14 Nov 2026</p>
+    <p class="ver" id="ver">Current version: <b>1.6.77 · Mac 1.6.84</b> · 14 Nov 2026</p>
 
     <div class="platforms" id="get">
       <div class="plat main">
@@ -156,7 +156,7 @@
   fetch('https://api.github.com/repos/' + REPO + '/releases/latest', {headers:{Accept:'application/vnd.github+json'}})
     .then(function(r){ if(!r.ok) throw r.status; return r.json(); })
     .then(function(rel){
-      var v = (rel.tag_name || '').replace(/^v/, '');
+      var v = (rel.name || rel.tag_name || '').replace(/^Tacheo Topside /, '').replace(/^v/, '');
       var d = rel.published_at ? new Date(rel.published_at).toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'}) : '';
       if (v) document.getElementById('ver').innerHTML = 'Current version: <b>' + v + '</b>' + (d ? ' · ' + d : '');
       var sums = (rel.body || '').match(/[0-9a-f]{64}\s+\S+/gi);
