@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- Copyright (C) 2026 Phillip M. Sullivan. All rights reserved. Tacheo project material. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tacheo: the cave survey instrument that checks its own work</title>
+<meta name="description" content="Laser distance, compass and clinometer in one sealed handheld with a 2-inch colour screen. CrossTalk, Backsight checks, calibration health and built-in survey tools.">
+<meta property="og:title" content="Tacheo: the cave survey instrument that checks its own work">
+<meta property="og:description" content="Laser distance, compass and clinometer in one sealed handheld with a 2-inch colour screen. CrossTalk, Backsight checks, calibration health and built-in survey tools.">
+<meta property="og:image" content="assets/img/tacheo2-render.webp">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#141517">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="Tacheo home"><i aria-hidden="true"></i>TACHEO</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="tacheo.html" class="on" aria-current="page">Tacheo</a></li>
+        <li><a href="topside.html">Topside</a></li>
+        <li><a href="cartotable.html">CartoTable</a></li>
+        <li><a href="reserve.html">Reserve</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="hright">
+      <a class="btn" href="download.html">Download</a>
+      <details class="mnav"><summary aria-label="Menu">Menu</summary>
+        <ul>
+          <li><a href="tacheo.html" class="on" aria-current="page">Tacheo</a></li>
+          <li><a href="topside.html">Topside</a></li>
+          <li><a href="cartotable.html">CartoTable</a></li>
+          <li><a href="reserve.html">Reserve</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="download.html">Download</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="pagehead">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">The instrument</p>
+      <h1>Tacheo</h1>
+      <p class="tag">The survey instrument that <em>checks its own work.</em></p>
+      <p class="sub">Laser distance, compass and clinometer in one sealed handheld, with a 2-inch colour screen. It shows the numbers, you book them, and it tells you when a Frontsight and its Backsight don't agree before you leave the station.</p>
+      <ul class="jump">
+        <li><a href="#crosstalk">CrossTalk</a></li><li><a href="#every-shot">Every shot</a></li><li><a href="#calibration">Calibration &amp; tools</a></li><li><a href="#specs">Specifications</a></li>
+      </ul>
+    </div>
+    <figure><img src="assets/img/tacheo2-render.webp" width="1000" height="812" alt="Tacheo 2: a charcoal handheld with a raised black screen deck and an orange screw cap over the USB-C port."><figcaption>Tacheo 2 · design render</figcaption></figure>
+  </div>
+</section>
+<section id="crosstalk">
+  <div class="wrap split">
+    <div class="head">
+      <p class="eyebrow">CrossTalk</p>
+      <h2>Two instruments, one leg. They check each other.</h2>
+      <p class="lead">Survey with two Tacheos and they link up over Bluetooth. Shoot the Frontsight from one station and the Backsight from the next, and the two units compare the pair before either number goes in the book.</p>
+      <div class="rows">
+        <div class="row"><span class="k">Agree</span><span class="v">Within 2° and 0.10&nbsp;ft: a <span class="ok">✓</span>. Within 1° on both angles: a <span class="ok">★</span>. Book it and move on.</span></div>
+        <div class="row"><span class="k">Disagree</span><span class="v">An unhappy tone, the bad figure in <span class="bad">red</span>, and which one to check: azimuth, clino or distance.</span></div>
+        <div class="row"><span class="k">Roles</span><span class="v">Each unit shows FS or BS on its ready screen. Set one and the partner takes the other.</span></div>
+        <div class="row"><span class="k">Teams</span><span class="v">Units ask before they link and show the owner's name and serial number, so two teams 50&nbsp;ft apart never cross wires.</span></div>
+        <div class="row"><span class="k">Others</span><span class="v">A Tacheo can also listen to a BRIC4/5, Cavway X1 or Disto XBLE and check that instrument's shots against its own.</span></div>
+      </div>
+    </div>
+    <div>
+      <svg class="legsvg" viewBox="0 0 520 70" role="img" aria-label="A survey leg from station A6 to station A7, Frontsight shot from A6 and Backsight from A7">
+        <line x1="40" y1="40" x2="480" y2="40" stroke="#5A5E64" stroke-width="2" stroke-dasharray="6 6"/>
+        <circle cx="40" cy="40" r="7" fill="none" stroke="#ECEAE5" stroke-width="2"/>
+        <circle cx="480" cy="40" r="7" fill="none" stroke="#ECEAE5" stroke-width="2"/>
+        <text x="40" y="66" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">A6</text>
+        <text x="480" y="66" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="middle">A7</text>
+        <path d="M60 28 L200 28" stroke="#FF4A3D" stroke-width="2"/><path d="M200 28 l-8 -4 v8z" fill="#FF4A3D"/>
+        <text x="62" y="20" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="11.5">FS 123.4°</text>
+        <path d="M460 28 L320 28" stroke="#FF4A3D" stroke-width="2"/><path d="M320 28 l8 -4 v8z" fill="#FF4A3D"/>
+        <text x="458" y="20" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="11.5" text-anchor="end">BS 303.6°</text>
+      </svg>
+      <div class="pair">
+        <div class="unit">
+          <p class="who">Unit 1 · FS at A6</p>
+          <div class="screen">
+            <svg viewBox="0 0 240 320" role="img" aria-label="Unit 1 screen: Frontsight 123.4 degrees, back bearing 303.4, partner Backsight agrees within 1 degree, star">
+              <rect width="240" height="320" fill="#0B0F14"/>
+              <rect x="10" y="10" width="34" height="18" fill="#ECEAE5"/><text x="27" y="23.5" fill="#0B0F14" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" text-anchor="middle">FS</text>
+              <text x="230" y="24" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="end">86%</text>
+              <text x="12" y="60" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">AZ</text>
+              <text x="228" y="78" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="38" font-weight="700" text-anchor="end">123.4°</text>
+              <text x="12" y="112" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">INC</text>
+              <text x="228" y="122" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700" text-anchor="end">−12.2°</text>
+              <text x="12" y="150" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">DIST</text>
+              <text x="228" y="160" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700" text-anchor="end">38.62ft</text>
+              <rect x="10" y="182" width="220" height="62" fill="none" stroke="#F2A93B" stroke-width="2"/>
+              <text x="20" y="200" fill="#F2A93B" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">BACK</text>
+              <text x="220" y="234" fill="#F2A93B" font-family="JetBrains Mono, monospace" font-size="38" font-weight="700" text-anchor="end">303.4</text>
+              <text x="12" y="282" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">★ FS/BS 0.2° 0.1°</text>
+              <text x="12" y="304" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="11">A6–A7 · partner TCH-07</text>
+            </svg>
+          </div>
+        </div>
+        <div class="unit">
+          <p class="who">Unit 2 · BS at A7</p>
+          <div class="screen">
+            <svg viewBox="0 0 240 320" role="img" aria-label="Unit 2 screen: Backsight 303.6 degrees, agrees with the Frontsight within 1 degree, star">
+              <rect width="240" height="320" fill="#0B0F14"/>
+              <rect x="10" y="10" width="34" height="18" fill="#ECEAE5"/><text x="27" y="23.5" fill="#0B0F14" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" text-anchor="middle">BS</text>
+              <text x="230" y="24" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="end">91%</text>
+              <text x="12" y="60" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">AZ</text>
+              <text x="228" y="78" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="38" font-weight="700" text-anchor="end">303.6°</text>
+              <text x="12" y="112" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">INC</text>
+              <text x="228" y="122" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700" text-anchor="end">+12.3°</text>
+              <text x="12" y="150" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">DIST</text>
+              <text x="228" y="160" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700" text-anchor="end">38.60ft</text>
+              <rect x="10" y="182" width="220" height="62" fill="#14301A" stroke="#7BE08A" stroke-width="2"/>
+              <text x="20" y="200" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">BACKSIGHT</text>
+              <text x="220" y="234" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="30" font-weight="700" text-anchor="end">0.2° off</text>
+              <text x="12" y="282" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">★ FS/BS 0.2° 0.1°</text>
+              <text x="12" y="304" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="11">A6–A7 · partner TCH-06</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <p class="scap"><span>Screens are design renders</span><b>Within 1°: ★</b></p>
+    </div>
+  </div>
+</section>
+<section id="every-shot">
+  <div class="wrap split">
+    <div>
+      <div class="screen">
+        <svg viewBox="0 0 320 240" role="img" aria-label="Single-unit screen: a shot of 300.2 degrees caught as a Backsight, 1.3 degrees off the reciprocal">
+          <rect width="320" height="240" fill="#0B0F14"/>
+          <text x="12" y="22" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">A12–A13</text>
+          <text x="308" y="22" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="end">74%</text>
+          <text x="12" y="64" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">AZ</text>
+          <text x="186" y="74" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="40" font-weight="700" text-anchor="end">300.2°</text>
+          <text x="12" y="108" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">INC</text>
+          <text x="186" y="112" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700" text-anchor="end">+4.8°</text>
+          <text x="12" y="146" fill="#A7A9AD" font-family="JetBrains Mono, monospace" font-size="12">DIST</text>
+          <text x="186" y="150" fill="#ECEAE5" font-family="JetBrains Mono, monospace" font-size="24" font-weight="700" text-anchor="end">22.07ft</text>
+          <rect x="200" y="44" width="110" height="108" fill="#14301A" stroke="#7BE08A" stroke-width="2"/>
+          <text x="210" y="64" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">BACKSIGHT</text>
+          <text x="300" y="106" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="30" font-weight="700" text-anchor="end">1.3°</text>
+          <text x="300" y="140" fill="#7BE08A" font-family="JetBrains Mono, monospace" font-size="12" text-anchor="end">dist ✓</text>
+          <rect x="10" y="176" width="300" height="50" fill="none" stroke="#F2A93B" stroke-width="2"/>
+          <text x="20" y="206" fill="#F2A93B" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700">BACK</text>
+          <text x="300" y="215" fill="#F2A93B" font-family="JetBrains Mono, monospace" font-size="32" font-weight="700" text-anchor="end">120.2</text>
+        </svg>
+      </div>
+      <p class="scap"><span>One Tacheo on its own catches a Backsight</span><b>1.3° off</b></p>
+    </div>
+    <div class="head">
+      <p class="eyebrow">Every shot</p>
+      <h2>The backsight is on the screen before you need it.</h2>
+      <ul class="items">
+        <li><b>BACK box.</b> Every shot shows its reciprocal bearing in big amber digits, so the number your partner is looking for is already worked out.</li>
+        <li><b>Backsight detection.</b> Shoot back within 8° of that reciprocal and Tacheo labels the shot, shows the error in degrees, and checks the distance against the Frontsight to 0.10&nbsp;ft.</li>
+        <li><b>FSx3.</b> Three Frontsights within 2° of each other earn a confirming chime.</li>
+        <li><b>LRUDs in one tap.</b> Each is named Up, Down, Left or Right from the last leg, and flagged if it isn't square.</li>
+        <li><b>Station names.</b> Turn on Leg track and every shot is tagged A12–A13, backsights and splays included.</li>
+        <li><b>Steady shots.</b> Hold SHOT for 3 seconds (1.5 to 5, your choice). It beeps when the reading is in and asks for a re-shoot if the unit moved.</li>
+        <li><b>Loops that close.</b> Come back to a station and Tacheo checks the loop. Off by more than 1&nbsp;ft, it names the leg most likely to be wrong.</li>
+        <li><b>Warnings that matter.</b> Legs over your limit (50&nbsp;ft unless you change it) get boxed with an extra beep. Steep shots are marked; past 88° it reads VERT.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="calibration">
+  <div class="wrap">
+    <div class="split">
+      <div class="head">
+        <p class="eyebrow">Calibration &amp; health</p>
+        <h2>It tells you when it's drifting.</h2>
+        <p class="lead">A survey instrument is only as good as its last calibration. Tacheo keeps score of its own, every time you switch it on.</p>
+      </div>
+      <ul class="items" style="margin-top:0">
+        <li><b>Two depths.</b> Normal: 24 holds, about 6 minutes. Precision: 48, about 12. Compass and clino on their own or together. Press, let go, and a 3-second timer takes the hold, so shaky hands don't count.</li>
+        <li><b>Laser set once.</b> Aim and distance are calibrated on the bench before the unit ships, behind a factory menu that field calibrations never touch.</li>
+        <li><b>Every shot knows its calibration.</b> Each one carries its calibration's ID, and a very good calibration earns an EXCELLENT rating.</li>
+        <li><b>A health check at every start.</b> Your average Frontsight-to-Backsight error over the last 20 pairs, and a warning that names any sensor that has drifted.</li>
+        <li><b>Check and Quick fix.</b> Confirm a calibration in the cave, or fix a compass offset in 8 holds.</li>
+      </ul>
+    </div>
+    <div class="tools" aria-label="Seven built-in tools">
+      <div class="tool"><b>Sketch</b><span>Shots drawn to scale on a survey page.</span></div>
+      <div class="tool"><b>Field meter</b><span>Hear where the magnetic interference is.</span></div>
+      <div class="tool"><b>Strike &amp; dip</b><span>Lay it on a bedding plane.</span></div>
+      <div class="tool"><b>Point-to-point</b><span>Dome heights and pit depths without a tape.</span></div>
+      <div class="tool"><b>Rigging</b><span>Drop, distance from the lip, rope to bring.</span></div>
+      <div class="tool"><b>Live tape</b><span>A running distance read-out.</span></div>
+      <div class="tool"><b>Elevation</b><span>Height above or below a zero station.</span></div>
+      <div class="tool"><b>Made to keep working</b><span>Sand in a button? It runs on the other one. After a freeze it restarts itself, shots and calibration kept.</span></div>
+    </div>
+  </div>
+</section>
+<section id="specs">
+  <div class="wrap specs">
+    <div>
+      <p class="eyebrow">Built for the cave</p>
+      <h2>Sealed, sand-proof, and ready for the mud.</h2>
+      <dl class="spec">
+        <dt>Case</dt><dd>Printed PETG in charcoal, with a black screen deck. Pocket-sized</dd>
+        <dt>Screen</dt><dd>2.0″ IPS colour, 320 × 240, under its own window. Auto-dim between shots; the backlight goes dark for every compass reading</dd>
+        <dt>Compass</dt><dd>PNI RM3100 magnetometer</dd>
+        <dt>Clino</dt><dd>ST LSM6DSV16X accelerometer</dd>
+        <dt>Distance</dt><dd>Laser rangefinder with a visible red dot</dd>
+        <dt>Sealing</dt><dd>Polycarbonate windows, silicone-sealed seams, USB-C under an O-ring screw cap</dd>
+        <dt>Buttons</dt><dd>SHOT and MENU, under silicone covers that keep cave sand out</dd>
+        <dt>Power</dt><dd>Plug-in LiPo cells charged over USB-C: 1000&nbsp;mAh, or 2000&nbsp;mAh with Extended Range. Battery percentage on every screen</dd>
+        <dt>Memory</dt><dd>The newest 10,000–20,000 shots, each with its calibration ID</dd>
+        <dt>Bluetooth</dt><dd>CrossTalk between Tacheos, and shots sent to survey apps such as SexyTopo</dd>
+        <dt>Yours</dt><dd>Its own serial number, your name on the start-up screen, and an FS or BS mark on the lid</dd>
+      </dl>
+    </div>
+    <div class="views">
+      <figure>
+        <img src="assets/img/tacheo2-front.webp" loading="lazy" width="1000" height="738" alt="Tacheo 2 from the front: the laser window with its red dot, the TACHEO lettering and both buttons on the deck, and the orange USB cap on the side.">
+        <figcaption>Front: laser window, SHOT and MENU · design render</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/tacheo2-rear.webp" loading="lazy" width="1000" height="671" alt="Tacheo 2 from the rear, showing the FS mark on the lid and the station-rod hole in the rear plate.">
+        <figcaption>Rear: FS mark and station-rod hole · design render</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="cta">
+  <div class="wrap">
+    <div><p class="eyebrow">Tacheo 2 · first run</p><h2>25 units, built and calibrated by hand.</h2><p class="muted">$380 plus shipping. No money changes hands until production is confirmed.</p></div>
+    <div class="actions"><a class="btn" href="reserve.html">Reserve one</a><a class="btn ghost" href="tacheo.html#specs">Specifications</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><b>Tacheo</b><a href="tacheo.html">The instrument</a><a href="tacheo.html#specs">Specifications</a><a href="reserve.html">Reserve one</a></div>
+      <div><b>Software</b><a href="topside.html">Tacheo Topside</a><a href="cartotable.html">CartoTable</a><a href="download.html">Download</a></div>
+      <div><b>Help</b><a href="support.html">Support and FAQ</a><a href="support.html#message">Message Sully</a><a href="download.html#windows-warning">If Windows warns you</a></div>
+      <div><b>More</b><a href="about.html">About</a><a href="about.html#log">Development log</a><a href="privacy.html">Privacy</a></div>
+    </div>
+    <p>Tacheo 2 is in production design: pictures and screens are design renders, and specifications may change before the first run ships. Reading other makers' instruments is in beta. Laser product: do not stare into the beam.</p>
+    <p>© 2026 Phillip M. Sullivan. Tacheo, CrossTalk, Tacheo Topside and CartoTable are names used by Phillip M. Sullivan. BRIC, Cavway, DistoX, Disto, SAP, SexyTopo, Walls, Compass, Survex and Therion belong to their owners. Laying sketches on the survey comes from CaveWhere by Philip Schuchardt.</p>
+  </div>
+</footer>
+</body>
+</html>

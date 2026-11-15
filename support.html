@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Copyright (C) 2026 Phillip M. Sullivan. All rights reserved. Tacheo project material. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Tacheo, Topside and CartoTable</title>
+<meta name="description" content="Answers to common questions about Tacheo, Tacheo Topside and CartoTable, install help, and a box to message Sully directly.">
+<meta property="og:title" content="Support: Tacheo, Topside and CartoTable">
+<meta property="og:description" content="Answers to common questions about Tacheo, Tacheo Topside and CartoTable, install help, and a box to message Sully directly.">
+<meta property="og:image" content="assets/img/tacheo2-render.webp">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#141517">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="Tacheo home"><i aria-hidden="true"></i>TACHEO</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="tacheo.html">Tacheo</a></li>
+        <li><a href="topside.html">Topside</a></li>
+        <li><a href="cartotable.html">CartoTable</a></li>
+        <li><a href="reserve.html">Reserve</a></li>
+        <li><a href="support.html" class="on" aria-current="page">Support</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="hright">
+      <a class="btn" href="download.html">Download</a>
+      <details class="mnav"><summary aria-label="Menu">Menu</summary>
+        <ul>
+          <li><a href="tacheo.html">Tacheo</a></li>
+          <li><a href="topside.html">Topside</a></li>
+          <li><a href="cartotable.html">CartoTable</a></li>
+          <li><a href="reserve.html">Reserve</a></li>
+          <li><a href="support.html" class="on" aria-current="page">Support</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="download.html">Download</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="pagehead short">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Help</p>
+      <h1>Support</h1>
+      <p class="sub">Answers to the common questions below. Anything else, a bug, or a Windows warning: <a href="#message">message me</a> and it comes straight to my inbox.</p>
+      <ul class="jump">
+        <li><a href="#faq">Questions</a></li><li><a href="download.html#install">Installing</a></li><li><a href="download.html#windows-warning">If Windows warns you</a></li><li><a href="#message">Message Sully</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Questions</p>
+    <h2>Before you ask.</h2>
+    <div class="faq">
+      <div><h3>Do I need a phone?</h3><p>No. Tacheo shows every number on its own screen and you book them in your notebook. Bluetooth to a survey app is there if you want it.</p></div>
+      <div><h3>Does one Tacheo do anything on its own?</h3><p>Yes. The BACK box, Backsight detection, FSx3, loop checks and the tools all work with a single unit. CrossTalk needs two.</p></div>
+      <div><h3>How accurate is it?</h3><p>Measured figures will be published once production units have been through testing. Each unit's calibration is checked before it ships.</p></div>
+      <div><h3>Is it waterproof?</h3><p>It's sealed against mud, drips and sand, with the USB-C port under an O-ring cap. It isn't rated for submersion.</p></div>
+      <div><h3>Will it work with my other instrument?</h3><p>A Tacheo can listen to a BRIC4/5, Cavway X1 or Disto XBLE and check that instrument's shots against its own, and Topside reads their data too.</p></div>
+      <div><h3>Do I need a Tacheo to use Topside or CartoTable?</h3><p>No. Both are free. CartoTable opens any Walls, Compass, Survex or Therion project, and Topside reads DistoX2, Disto XBLE, Cavway X1 and BRIC instruments too.</p></div>
+      <div><h3>Does CartoTable run on a Mac?</h3><p>Not yet. CartoTable runs on Windows. Topside for Mac is in beta, and its CartoTable card opens Reckon, the blunder finder, for now.</p></div>
+      <div><h3>Windows says the download is a threat.</h3><p>Topside is new and not yet code-signed, and Microsoft Defender's automatic checks sometimes flag new programs from small makers. The <a href="download.html#windows-warning">download page</a> says what's going on and what to do.</p></div>
+      <div><h3>How do I ask something?</h3><p><a href="#message">Message me</a> with the box below; it comes straight to my inbox. Reservations go through the <a href="reserve.html">Reserve</a> page.</p></div>
+      <div><h3>Who builds it?</h3><p>Phillip Sullivan ("Sully"), a caver, cave surveyor and cave cartographer. Every unit is assembled, calibrated and checked by hand.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="message">
+  <div class="wrap split">
+    <div class="head">
+      <p class="eyebrow">Message Sully</p>
+      <h2>A warning, a bug, a question.</h2>
+      <p class="lead">Type it here and it comes straight to me. If Windows flagged something, include the threat name and the file it named (Windows Security → Virus &amp; threat protection → Protection history).</p>
+    </div>
+    <div class="reserve">
+      <form id="message-form" class="rform" data-kind="message" novalidate>
+        <label>Name <input name="name" autocomplete="name" required maxlength="100"></label>
+        <label>Email <span class="opt">so I can answer</span> <input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+        <label>Message <textarea name="notes" rows="5" required maxlength="4000"></textarea></label>
+        <div class="hp" aria-hidden="true"><label>Leave this empty <input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn" type="submit">Send to Sully</button>
+        <p class="rstatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><b>Tacheo</b><a href="tacheo.html">The instrument</a><a href="tacheo.html#specs">Specifications</a><a href="reserve.html">Reserve one</a></div>
+      <div><b>Software</b><a href="topside.html">Tacheo Topside</a><a href="cartotable.html">CartoTable</a><a href="download.html">Download</a></div>
+      <div><b>Help</b><a href="support.html">Support and FAQ</a><a href="support.html#message">Message Sully</a><a href="download.html#windows-warning">If Windows warns you</a></div>
+      <div><b>More</b><a href="about.html">About</a><a href="about.html#log">Development log</a><a href="privacy.html">Privacy</a></div>
+    </div>
+    <p>Tacheo 2 is in production design: pictures and screens are design renders, and specifications may change before the first run ships. Reading other makers' instruments is in beta. Laser product: do not stare into the beam.</p>
+    <p>© 2026 Phillip M. Sullivan. Tacheo, CrossTalk, Tacheo Topside and CartoTable are names used by Phillip M. Sullivan. BRIC, Cavway, DistoX, Disto, SAP, SexyTopo, Walls, Compass, Survex and Therion belong to their owners. Laying sketches on the survey comes from CaveWhere by Philip Schuchardt.</p>
+  </div>
+</footer>
+<script src="assets/reserve.js" defer></script>
+</body>
+</html>

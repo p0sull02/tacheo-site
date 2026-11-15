@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- Copyright (C) 2026 Phillip M. Sullivan. All rights reserved. Tacheo project material. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CartoTable: cave survey data, cartography and GIS</title>
+<meta name="description" content="CartoTable checks a Walls, Compass, Survex or Therion survey for blunders, reads book pages, lays sketches under the plan, draws cross sections, and puts the cave on lidar. Free, inside Tacheo Topside.">
+<meta property="og:title" content="CartoTable: cave survey data, cartography and GIS">
+<meta property="og:description" content="CartoTable checks a Walls, Compass, Survex or Therion survey for blunders, reads book pages, lays sketches under the plan, draws cross sections, and puts the cave on lidar. Free, inside Tacheo Topside.">
+<meta property="og:image" content="assets/img/tacheo2-render.webp">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#141517">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="Tacheo home"><i aria-hidden="true"></i>TACHEO</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="tacheo.html">Tacheo</a></li>
+        <li><a href="topside.html">Topside</a></li>
+        <li><a href="cartotable.html" class="on" aria-current="page">CartoTable</a></li>
+        <li><a href="reserve.html">Reserve</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="hright">
+      <a class="btn" href="download.html">Download</a>
+      <details class="mnav"><summary aria-label="Menu">Menu</summary>
+        <ul>
+          <li><a href="tacheo.html">Tacheo</a></li>
+          <li><a href="topside.html">Topside</a></li>
+          <li><a href="cartotable.html" class="on" aria-current="page">CartoTable</a></li>
+          <li><a href="reserve.html">Reserve</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="download.html">Download</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="pagehead ctpage">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Free · Windows · inside Topside</p>
+      <h1>CartoTable</h1>
+      <p class="tag">From the field book <em>to the finished map.</em></p>
+      <p class="sub">Cave survey data, cartography and GIS in one program. It opens the survey you already have, finds what's wrong with it, and takes you through to plates, cross sections and the cave on the ground.</p>
+      <div class="actions"><a class="btn blue" href="download.html">Get CartoTable</a><a class="btn ghost" href="#formats">What it opens and writes</a></div>
+    </div>
+    <figure class="shot"><img src="assets/img/ct-home.webp" width="1360" height="860" alt="CartoTable's Home page with a step bar and one tile per job."><figcaption>Home: one tile per job</figcaption></figure>
+  </div>
+</section>
+<section id="cartotable">
+  <div class="wrap">
+    <div class="ct-lead">
+      <div class="head">
+        <p class="eyebrow">Why it exists</p>
+        <h2>Cave cartography without the wall of menus.</h2>
+        <p class="lead">Cave survey data, cartography and GIS in one program. Open a Walls, Compass, Survex or Therion project and CartoTable checks it, tells you in plain words what's wrong and what fixing it gains, and takes you through to plates, cross sections and the cave on the ground.</p>
+        <p class="muted">Built because the software has been the hardest part of becoming a cave cartographer. No drop-down menus: every page is named on the left, every action is a button where you need it, and <b style="color:var(--ink)">Ctrl+K</b> finds anything by typing. Pick <b style="color:var(--ink)">Guided</b> for a step bar that says what to do next, or <b style="color:var(--ink)">Experienced</b> for the statistics.</p>
+        <div class="actions">
+          <a class="btn blue" href="download.html">Get CartoTable <small>comes with Topside</small></a>
+        </div>
+      </div>
+      <figure class="shot">
+        <a class="zoom" href="assets/img/ct-3d.webp" target="_blank" rel="noopener" title="Open full size"><img src="assets/img/ct-3d.webp" loading="lazy" width="1360" height="860" alt="A cave turned in 3-D in CartoTable, coloured by loop grade."></a>
+        <figcaption>3-D: drag to turn, coloured by grade, depth or year</figcaption>
+      </figure>
+    </div>
+
+    <div class="ct-grid">
+      <div class="ct-feat">
+        <figure class="shot"><a class="zoom" href="assets/img/ct-check.webp" target="_blank" rel="noopener" title="Open full size"><img src="assets/img/ct-check.webp" loading="lazy" width="1360" height="860" alt="The plot with suspect legs drawn red and amber, and the Check the survey page giving a closure score and a Repair the data button."></a></figure>
+        <h3>It finds the blunders, and shows you the fix first.</h3>
+        <p>Compile (F5) adjusts the whole survey and grades every loop as a plain "misses by 1 ft in every N", from Excellent to Blunder. Likely blunders are drawn red, legs to check in the book amber. For each one, <b style="color:var(--ink)">Try it</b> shows what the survey would look like with the corrected reading; <b style="color:var(--ink)">Apply</b> changes the survey file after you confirm, keeps the old one, and can be undone.</p>
+      </div>
+      <div class="ct-feat">
+        <figure class="shot"><a class="zoom" href="assets/img/ct-trip.webp" target="_blank" rel="noopener" title="Open full size"><img src="assets/img/ct-trip.webp" loading="lazy" width="1360" height="860" alt="Enter a trip: the book's shots typed line by line beside a photo of the field-book page, with an amber cell to check."></a></figure>
+        <h3>It reads the book page. You check it.</h3>
+        <p>Photograph the book's data page and CartoTable reads the numbers into the grid, marking in amber any it isn't sure of or that fail a check. Or type it line by line with the page on screen. Every line is checked against the whole cave as you finish it: front and back sights that disagree, backsights booked the wrong way round, repeats, tie-ins. Save it and CartoTable writes a complete Walls file and adds it to the project.</p>
+      </div>
+      <div class="ct-feat">
+        <figure class="shot"><a class="zoom" href="assets/img/ct-sections.webp" target="_blank" rel="noopener" title="Open full size"><img src="assets/img/ct-sections.webp" loading="lazy" width="1360" height="860" alt="A dark line plot of a large cave coloured by loop grade, with the Cross sections page beside it listing every station's section."></a></figure>
+        <h3>A cross section at every station.</h3>
+        <p>Square to the passage, shaped from splays where they were shot and from the LRUDs where they weren't, with the bedding tilted to its apparent dip on each section. Saved as a plate SVG, ready for drafting.</p>
+      </div>
+      <div class="ct-feat">
+        <figure class="shot"><a class="zoom" href="assets/img/ct-map.webp" target="_blank" rel="noopener" title="Open full size"><img src="assets/img/ct-map.webp" loading="lazy" width="1360" height="860" alt="The Map and GIS page: labelled contours over shaded relief, with a layers list on the right."></a></figure>
+        <h3>The cave on the ground.</h3>
+        <p>Load a lidar or elevation model and get hillshade, local relief, sky view and contours. The sinkhole finder ranks every hollow by how it relates to the passage and the open leads. See where each passage's level meets the hillside, lay in rock units, and find passage ends that come close to other passage through the rock.</p>
+      </div>
+      <div class="ct-feat">
+        <figure class="shot"><a class="zoom" href="assets/img/ct-review.webp" target="_blank" rel="noopener" title="Open full size"><img src="assets/img/ct-review.webp" loading="lazy" width="1360" height="860" alt="Trip review: a list of trips on the left, the plot narrowed to one trip, and that trip's book pages to check against the survey file."></a></figure>
+        <h3>Book pages, sorted and checked.</h3>
+        <p>Drop in a folder of phone photos of the book. CartoTable sorts them into trips, makes one PDF per trip, and puts the book beside the survey file so you can check one against the other. Scanned sketches are laid under the plan from the stations you mark on them.</p>
+      </div>
+      <div class="ct-feat">
+        <figure class="shot"><a class="zoom" href="assets/img/ct-loop.webp" target="_blank" rel="noopener" title="Open full size"><img src="assets/img/ct-loop.webp" loading="lazy" width="1360" height="860" alt="The Loop inspector: one loop drawn on its own, banded by field book, with a ranked list of what would close it."></a></figure>
+        <h3>One bad loop, taken apart.</h3>
+        <p>The Loop inspector shows a loop on its own, banded by field book, and ranks what would close it: a single misread number, or a whole trip's compass, clino or tape off by a constant. When nothing explains it, it says which legs to re-shoot.</p>
+      </div>
+    </div>
+
+    <div class="ct-tools" aria-label="More in CartoTable">
+      <div class="tool"><b>3-D</b><span>Turn the cave with the mouse, coloured by grade, depth, year or trip.</span></div>
+      <div class="tool"><b>Leads</b><span>Every lead in the notes, nearest the entrance first, with size and height. Tick them off as they're pushed.</span></div>
+      <div class="tool"><b>History</b><span>Footage by year and by surveyor, and a slider that shows the cave as it stood on any survey date.</span></div>
+      <div class="tool"><b>Place on the map</b><span>Paste a GPS position in any form; declination from each trip's date. It catches a cave that landed off Africa.</span></div>
+      <div class="tool"><b>Project tree</b><span>Edit a Walls .wpj; every line it doesn't change is written back exactly.</span></div>
+      <div class="tool"><b>Geographic calculator</b><span>Any position form in, every form out, with convergence and declination on any date.</span></div>
+      <div class="tool"><b>Live</b><span>Save a change in any editor and it re-checks by itself, keeping your view.</span></div>
+      <div class="tool"><b>Drop anything</b><span>A survey opens; a DEM, lidar, shapefile or image goes on the map; a scan goes to Sketches.</span></div>
+    </div>
+
+    <p class="formats"><b>Opens</b> Walls · Compass · Survex · Therion &nbsp; <b>Writes</b> all four, plus plan, profile and extended-elevation SVG · cross-section plates · 3-D model · shapefiles · GeoJSON · KML · GPX · CSV · a printed map sheet (PNG, PDF) · the survey report</p>
+
+    <div class="private"><b>Cave locations stay on your computer.</b> <span class="muted">CartoTable never uploads survey data or positions. Online map tiles and the geology lookup are opt-in, each with a warning that the server learns the area you're looking at.</span></div>
+  </div>
+</section>
+<section id="ct-modes">
+  <div class="wrap split">
+    <div class="head">
+      <p class="eyebrow">Two ways to work</p>
+      <h2>Guided for your first map. Experienced for your fortieth.</h2>
+      <p class="lead">The first time it opens, CartoTable asks how you want to work. Switch any time; the data never changes.</p>
+    </div>
+    <div class="rows" style="margin-top:0">
+      <div class="row"><span class="k">Guided</span><span class="v">A step bar: open, check its health, fix what it finds, place it on the map, make the outputs. One plain sentence says what to do next, and a button does it.</span></div>
+      <div class="row"><span class="k">Experienced</span><span class="v">No step bar. Adds the Stations table and the statistics: checked %, w-test, p-value.</span></div>
+      <div class="row"><span class="k">Ctrl+K</span><span class="v">Type to find any page, action or station. Type <code>A10</code> to fly to that station.</span></div>
+      <div class="row"><span class="k">No menus</span><span class="v">Every page is named on the left; every choice is a button you can see. Empty pages say what to do.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="ct-sketch">
+  <div class="wrap split">
+    <div>
+      <figure class="shot"><img src="assets/img/ct-sections.webp" loading="lazy" width="1360" height="860" alt="The Cross sections page beside a large cave's line plot."></figure>
+    </div>
+    <div class="head">
+      <p class="eyebrow">Drafting</p>
+      <h2>Sketches, sections and plates.</h2>
+      <ul class="items">
+        <li><b>Sketches under the plan.</b> Mark a few stations on a scanned page and it's laid under the survey. Whole sheet keeps the page intact and readable; Smooth bend, Station by station, Shingle and Strips handle rough sketches and pages with more than one drawing. Each page shows how well its marks fit.</li>
+        <li><b>Cross sections.</b> One at every station, from splays or LRUDs, with the bedding at its apparent dip on each section's plane.</li>
+        <li><b>Plan, profile and extended elevation</b> as layered SVG at a true scale, ready for Illustrator or Inkscape.</li>
+        <li><b>Leads.</b> Every lead in the notes, nearest the entrance first, with height and size; tick them off as they're pushed.</li>
+        <li><b>History.</b> Footage by year and surveyor, and the cave as it stood on any survey date.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="formats">
+  <div class="wrap">
+    <p class="eyebrow">Files</p>
+    <h2>Works with what you already have.</h2>
+    <div class="ftable">
+      <div><b>Opens</b><span>Walls (.wpj, .srv), Compass (.mak, .dat), Survex (.svx), Therion (.th), a CartoTable project, or a folder of loose .srv files</span></div>
+      <div><b>Writes surveys</b><span>Walls, Compass, Survex, Therion, CartoTable projects. Anything a format can't hold is listed before it's written</span></div>
+      <div><b>Writes drawings</b><span>Plan, profile, profiles all round and extended elevation (SVG), cross-section plates, a 3-D model, a printed map sheet (PNG, PDF)</span></div>
+      <div><b>Writes GIS</b><span>Shapefiles, GeoJSON, KML for Google Earth, GPX for a phone or GPS, CSV tables</span></div>
+      <div><b>Reads GIS</b><span>GeoTIFF elevation models, lidar .las, imagery with a world file, shapefiles</span></div>
+      <div><b>Edits in place</b><span>A Walls .wpj project tree and .srv lines, keeping every line it doesn't change byte for byte, with a .bak and Undo</span></div>
+    </div>
+    <div class="private"><b>Cave locations stay on your computer.</b> <span class="muted">CartoTable never uploads survey data or positions. Online map tiles and the geology lookup are opt-in, each with a warning that the server learns the area you're looking at. See <a href="privacy.html">Privacy</a>.</span></div>
+  </div>
+</section>
+<section class="cta">
+  <div class="wrap">
+    <div><p class="eyebrow">Free</p><h2>Topside and CartoTable, one download.</h2><p class="muted">Windows 10 and 11; Topside for Mac in beta. After the first install, Topside updates itself.</p></div>
+    <div class="actions"><a class="btn" href="download.html">Download</a><a class="btn ghost" href="support.html">Install help</a></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><b>Tacheo</b><a href="tacheo.html">The instrument</a><a href="tacheo.html#specs">Specifications</a><a href="reserve.html">Reserve one</a></div>
+      <div><b>Software</b><a href="topside.html">Tacheo Topside</a><a href="cartotable.html">CartoTable</a><a href="download.html">Download</a></div>
+      <div><b>Help</b><a href="support.html">Support and FAQ</a><a href="support.html#message">Message Sully</a><a href="download.html#windows-warning">If Windows warns you</a></div>
+      <div><b>More</b><a href="about.html">About</a><a href="about.html#log">Development log</a><a href="privacy.html">Privacy</a></div>
+    </div>
+    <p>Tacheo 2 is in production design: pictures and screens are design renders, and specifications may change before the first run ships. Reading other makers' instruments is in beta. Laser product: do not stare into the beam.</p>
+    <p>© 2026 Phillip M. Sullivan. Tacheo, CrossTalk, Tacheo Topside and CartoTable are names used by Phillip M. Sullivan. BRIC, Cavway, DistoX, Disto, SAP, SexyTopo, Walls, Compass, Survex and Therion belong to their owners. Laying sketches on the survey comes from CaveWhere by Philip Schuchardt.</p>
+  </div>
+</footer>
+</body>
+</html>

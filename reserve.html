@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- Copyright (C) 2026 Phillip M. Sullivan. All rights reserved. Tacheo project material. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reserve a Tacheo: first run of 25</title>
+<meta name="description" content="Reserve a Tacheo 2 from the first run of 25 units, built and calibrated by hand. No money changes hands until production is confirmed.">
+<meta property="og:title" content="Reserve a Tacheo: first run of 25">
+<meta property="og:description" content="Reserve a Tacheo 2 from the first run of 25 units, built and calibrated by hand. No money changes hands until production is confirmed.">
+<meta property="og:image" content="assets/img/tacheo2-render.webp">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#141517">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="Tacheo home"><i aria-hidden="true"></i>TACHEO</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="tacheo.html">Tacheo</a></li>
+        <li><a href="topside.html">Topside</a></li>
+        <li><a href="cartotable.html">CartoTable</a></li>
+        <li><a href="reserve.html" class="on" aria-current="page">Reserve</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="hright">
+      <a class="btn" href="download.html">Download</a>
+      <details class="mnav"><summary aria-label="Menu">Menu</summary>
+        <ul>
+          <li><a href="tacheo.html">Tacheo</a></li>
+          <li><a href="topside.html">Topside</a></li>
+          <li><a href="cartotable.html">CartoTable</a></li>
+          <li><a href="reserve.html" class="on" aria-current="page">Reserve</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="download.html">Download</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="pagehead short">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Tacheo 2 · first run</p>
+      <h1>Reserve</h1>
+      <p class="sub">Put your name down for one of the 25 units in the first run. It takes a minute, costs nothing now, and I'll be in touch when production starts.</p>
+    </div>
+  </div>
+</section>
+<section id="reserve-now">
+  <div class="wrap run">
+    <div>
+      <p class="eyebrow">Tacheo 2 · first run</p>
+      <h2>25 units, built and calibrated by hand.</h2>
+      <p class="lead" style="margin-top:16px">Every unit is assembled, calibrated and checked by me before it ships, so you get an instrument that's already been through its first calibration.</p>
+      <div class="price"><span class="n">$380</span><span class="s">plus shipping</span></div>
+      <table class="add">
+        <tbody>
+          <tr><td>Extended Range<small>Two extra cells, 1000 → 2000 mAh, about twice the run time</small></td><td>+$30</td></tr>
+          <tr><td>Impact Case<small>Hard carry case with a Tacheo-labelled insert and rubber impact lining</small></td><td>+$30</td></tr>
+          <tr><td>Custom name<small>Your name or club lettered on the unit and the case insert</small></td><td>+$20</td></tr>
+        </tbody>
+      </table>
+      <p class="muted" style="margin-top:14px;font-size:15px">One-year warranty against defects in materials and workmanship in normal cave survey use, with free laser re-calibration.</p>
+    </div>
+    <div class="reserve">
+      <h3>Reserve one</h3>
+      <p class="muted">Reservations are open for the first run. No money changes hands until production is confirmed: I email you when production starts, and again when your units are ready to pay for.</p>
+      <form id="reserve-form" class="rform" data-kind="reservation" novalidate>
+        <label>Name <input name="name" autocomplete="name" required maxlength="100"></label>
+        <label>Email <input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+
+        <fieldset>
+          <legend>How many</legend>
+          <div class="pills" role="radiogroup">
+            <label><input type="radio" name="qty" value="1"> 1 unit</label>
+            <label><input type="radio" name="qty" value="2" checked> A pair (FS + BS)</label>
+            <label><input type="radio" name="qty" value="other"> More</label>
+          </div>
+          <label class="more" hidden>Number of units <input name="qtyOther" type="number" min="3" max="25" value="3"></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Add-ons, per unit</legend>
+          <div class="pills">
+            <label><input type="checkbox" name="addons" value="Extended Range" data-price="30"> Extended Range +$30</label>
+            <label><input type="checkbox" name="addons" value="Impact Case" data-price="30"> Impact Case +$30</label>
+            <label><input type="checkbox" name="addons" value="Custom name" data-price="20"> Custom name +$20</label>
+          </div>
+          <label class="customname" hidden>Name or club to letter on it <input name="customName" maxlength="40"></label>
+        </fieldset>
+
+        <label>Ships to <span class="opt">city, state, country is enough for now</span>
+          <input name="shipTo" autocomplete="address-level2" maxlength="300"></label>
+
+        <fieldset class="textme">
+          <legend>Phone <span class="opt">optional</span></legend>
+          <label class="check"><input type="checkbox" name="wantsText"> Text me to confirm my reservation</label>
+          <label class="phone" hidden>Mobile number <input name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder="(502) 555-0123"></label>
+          <p class="opt">I'll text you myself from my phone, once. Your number isn't used for anything else.</p>
+        </fieldset>
+
+        <label>Anything else <span class="opt">optional</span> <textarea name="notes" rows="3" maxlength="2000"></textarea></label>
+
+        <div class="hp" aria-hidden="true"><label>Leave this empty <input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <p class="total" aria-live="polite">Estimated: <b id="rtotal">$760</b> <span class="opt">plus shipping, paid only when your units are ready</span></p>
+        <button class="btn" type="submit">Reserve</button>
+        <p class="rstatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+<section id="how">
+  <div class="wrap split">
+    <div class="head">
+      <p class="eyebrow">How it works</p>
+      <h2>From reservation to the cave.</h2>
+    </div>
+    <ol class="steps">
+      <li><span><b>Reserve above.</b> You get a confirmation email straight away, and a text from me if you asked for one.</span></li>
+      <li><span><b>Production starts.</b> I email everyone on the list with a date and the final price for what you picked. Change or cancel at any point up to here.</span></li>
+      <li><span><b>Your units are ready.</b> I email you to pay. Nothing is charged before this.</span></li>
+      <li><span><b>It ships calibrated,</b> with your name on the start-up screen and, for a pair, FS and BS marked on the lids. Download <a href="download.html">Topside</a> while you wait.</span></li>
+    </ol>
+  </div>
+</section>
+<section id="reserve-faq">
+  <div class="wrap">
+    <p class="eyebrow">Before you reserve</p>
+    <div class="faq" style="margin-top:0">
+      <div><h3>Why a pair?</h3><p>CrossTalk needs two: one shoots the Frontsight, the other the Backsight, and they check each other. A single Tacheo still catches Backsights, FSx3 and loop errors on its own.</p></div>
+      <div><h3>What does the warranty cover?</h3><p>One year against defects in materials and workmanship in normal cave survey use, with free laser re-calibration.</p></div>
+      <div><h3>Is the price final?</h3><p>$380 per unit is the first-run price. Shipping is added when the units are ready to pay for.</p></div>
+      <div><h3>Can I change my order?</h3><p>Yes, any time before you pay. Reply to your confirmation email.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><b>Tacheo</b><a href="tacheo.html">The instrument</a><a href="tacheo.html#specs">Specifications</a><a href="reserve.html">Reserve one</a></div>
+      <div><b>Software</b><a href="topside.html">Tacheo Topside</a><a href="cartotable.html">CartoTable</a><a href="download.html">Download</a></div>
+      <div><b>Help</b><a href="support.html">Support and FAQ</a><a href="support.html#message">Message Sully</a><a href="download.html#windows-warning">If Windows warns you</a></div>
+      <div><b>More</b><a href="about.html">About</a><a href="about.html#log">Development log</a><a href="privacy.html">Privacy</a></div>
+    </div>
+    <p>Tacheo 2 is in production design: pictures and screens are design renders, and specifications may change before the first run ships. Reading other makers' instruments is in beta. Laser product: do not stare into the beam.</p>
+    <p>© 2026 Phillip M. Sullivan. Tacheo, CrossTalk, Tacheo Topside and CartoTable are names used by Phillip M. Sullivan. BRIC, Cavway, DistoX, Disto, SAP, SexyTopo, Walls, Compass, Survex and Therion belong to their owners. Laying sketches on the survey comes from CaveWhere by Philip Schuchardt.</p>
+  </div>
+</footer>
+<script src="assets/reserve.js" defer></script>
+</body>
+</html>
