@@ -9,7 +9,7 @@
 <meta property="og:title" content="Download Tacheo Topside and CartoTable">
 <meta property="og:description" content="Download Tacheo Topside, the free companion program for the Tacheo cave survey instrument, with CartoTable built in. Windows and Mac.">
 <meta property="og:image" content="assets/img/tacheo2-render.webp">
-<link rel="stylesheet" href="assets/site.css?v=2e8d24f4">
+<link rel="stylesheet" href="assets/site.css?v=dea2dd95">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#141517">
 </head>
@@ -23,6 +23,7 @@
         <li><a href="tacheo.html">Tacheo</a></li>
         <li><a href="topside.html">Topside</a></li>
         <li><a href="cartotable.html">CartoTable</a></li>
+        <li><a href="phone.html">Phone app</a></li>
         <li><a href="reserve.html">Reserve</a></li>
         <li><a href="support.html">Support</a></li>
         <li><a href="about.html">About</a></li>
@@ -35,6 +36,7 @@
           <li><a href="tacheo.html">Tacheo</a></li>
           <li><a href="topside.html">Topside</a></li>
           <li><a href="cartotable.html">CartoTable</a></li>
+          <li><a href="phone.html">Phone app</a></li>
           <li><a href="reserve.html">Reserve</a></li>
           <li><a href="support.html">Support</a></li>
           <li><a href="about.html">About</a></li>
@@ -49,36 +51,58 @@
 
 <section class="dl-hero">
   <div class="wrap">
-    <p class="eyebrow">Free · Windows and Mac</p>
-    <h1>Download Topside</h1>
-    <p class="lead">Tacheo Topside, the companion program for the Tacheo, with CartoTable built in for cave survey data, cartography and GIS. You don't need a Tacheo to use either.</p>
-    <p class="ver" id="ver">Always the current version: <b>the same files Topside updates itself from</b>, straight from Google Drive.</p>
+    <p class="eyebrow">Free · Windows, Mac, Android and iPhone</p>
+    <h1>Downloads</h1>
+    <p class="lead">Every download in one place: Tacheo Topside with CartoTable built in for your computer, and the Topside phone app. You don't need a Tacheo to use any of them.</p>
 
+    <h2 style="font-size:clamp(26px,3vw,34px);margin-top:34px" id="computer">For your computer</h2>
+    <p class="ver" id="ver">Tacheo Topside: the same files Topside updates itself from.</p>
     <div class="platforms" id="get">
-      <div class="plat main">
+      <div class="plat main" id="pWin">
         <h3>Windows</h3>
         <p>Windows 10 or 11. Topside and CartoTable. About 14&nbsp;MB.</p>
-        <a class="btn" href="https://drive.google.com/uc?export=download&id=1cx5-CuvDAZyJsZRw44GJ8de13N78FvIg">Download for Windows</a>
+        <a class="btn" id="winBtn" href="https://github.com/p0sull02/tacheo-topside-releases/releases/latest">Download for Windows</a>
+        <p class="note">Or from <a href="https://drive.google.com/uc?export=download&id=1cx5-CuvDAZyJsZRw44GJ8de13N78FvIg">Google Drive</a>. Microsoft Store version: coming soon.</p>
       </div>
-      <div class="plat">
+      <div class="plat" id="pMac">
         <h3>Mac · Apple silicon</h3>
         <p>M1 and newer, macOS 12 or later. Topside beta; CartoTable is Windows-only for now. About 50&nbsp;MB: Google Drive says it can't scan a file this size; click <b>Download anyway</b>.</p>
         <a class="btn ghost" href="https://drive.google.com/uc?export=download&id=1OW5zL2aPHQJ2cS-1p1hs4XIv6Y50FkN8">Download for Apple silicon</a>
       </div>
-      <div class="plat">
+      <div class="plat" id="pMacI">
         <h3>Mac · Intel</h3>
         <p>Intel Macs, macOS 12 or later. Topside beta; CartoTable is Windows-only for now. About 51&nbsp;MB: Google Drive says it can't scan a file this size; click <b>Download anyway</b>.</p>
         <a class="btn ghost" href="https://drive.google.com/uc?export=download&id=1FHuMDNkUgoX-qhXPqwnjaMdKLzoXYPzj">Download for Intel Mac</a>
       </div>
     </div>
-    <p class="muted" style="margin-top:14px;font-size:14.5px">Or open the folders on Google Drive: <a href="https://drive.google.com/drive/folders/1yS3zsTnFw0dB_zhXUc6RyVj7S5uYLiRf">Windows</a> · <a href="https://drive.google.com/drive/folders/1NuYi4YptK_mijEjoAD51jaPv6mBbVpny">Mac</a>, with each one's read-me. Not sure which Mac you have? Apple menu → About This Mac: "Chip: Apple M…" is Apple silicon, "Processor: Intel" is Intel.</p>
+    <p class="muted" style="margin-top:14px;font-size:14.5px">Not sure which Mac you have? Apple menu → About This Mac: "Chip: Apple M…" is Apple silicon, "Processor: Intel" is Intel. The Mac files are also in the <a href="https://drive.google.com/drive/folders/1NuYi4YptK_mijEjoAD51jaPv6mBbVpny">Mac folder</a> on Google Drive with their read-me.</p>
+
+    <h2 style="font-size:clamp(26px,3vw,34px);margin-top:44px" id="phone">For your phone</h2>
+    <p class="ver" id="phoneVer">The Topside phone app: your caves with no signal. <a href="phone.html">What it does</a> · <a href="https://p0sull02.github.io/cartotable-app/help.html">Help and how-to</a></p>
+    <div class="platforms">
+      <div class="plat main" id="pAnd">
+        <h3>Android</h3>
+        <p>Android 7 or later. About 0.2&nbsp;MB.</p>
+        <a class="btn" href="https://p0sull02.github.io/cartotable-app/Topside.apk" download>Download for Android</a>
+        <ol class="steps"><li><span>Open the download and tap <b>Install</b>. The first time, allow your browser to install apps.</span></li><li><span>If Play Protect warns about an unknown developer: <b>More details → Install anyway</b>.</span></li><li><span>Opened this from Messenger or another app? Its menu → <b>Open in Chrome</b> first.</span></li></ol>
+      </div>
+      <div class="plat" id="pIos">
+        <h3>iPhone and iPad</h3>
+        <p>A home-screen app that opens full screen and works with no signal.</p>
+        <a class="btn ghost" id="iosBtn" href="https://p0sull02.github.io/cartotable-app/Topside.mobileconfig">Download for iPhone / iPad</a>
+        <ol class="steps"><li><span>Open this page in <b>Safari</b> and tap <b>Allow</b>.</span></li><li><span><b>Settings → Profile Downloaded → Install</b>. Or in Safari: <b>Share → Add to Home Screen</b> on <a href="https://p0sull02.github.io/cartotable-app/">the app's page</a>.</span></li></ol>
+      </div>
+    </div>
+
+    <h2 style="font-size:clamp(26px,3vw,34px);margin-top:44px" id="firmware">Tacheo firmware and manuals</h2>
+    <p class="muted" style="font-size:16px;max-width:70ch">There's nothing separate to download: both come with Topside. Plug the Tacheo in with Topside open and use <b>Updates and Upgrades → Tacheo</b>; Topside keeps the right firmware for each kind of unit. The instruction manuals are on Topside's <b>Manuals</b> page.</p>
   </div>
 </section>
 
 <section id="install">
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Windows</p>
+      <p class="eyebrow">Installing on Windows</p>
       <h2>Install in a minute.</h2>
       <ol class="steps">
         <li><span><b>Unzip it.</b> Right-click the downloaded zip → <b>Extract All…</b> and pick a folder you'll keep, such as Documents. Don't run it from inside the zip.</span></li>
@@ -112,7 +136,7 @@
       <h3 style="margin-top:22px">Microsoft Defender says it found a threat</h3>
       <p>Defender's automatic (machine-learning) checks sometimes flag new, small programs, especially ones that update themselves and talk to USB devices, as Topside does. Each release is sent to Microsoft for review, and the flag usually clears within a few days.</p>
       <p><b>Please don't switch Defender off or add exclusions.</b> Instead, <a href="support.html#message">send me</a> the file it named and the threat name it gave (Windows Security → Virus &amp; threat protection → Protection history). I'll have it cleared and tell you when to download again.</p>
-      <div class="sums"><span>Download only from this page or the Drive folders linked above, and keep Topside in the folder you extracted it to.</span></div>
+      <div class="sums"><span>Download only from this page (GitHub or the Google Drive links above), and keep Topside in the folder you extracted it to.</span></div>
     </div>
   </div>
 </section>
@@ -123,21 +147,37 @@
     <p class="eyebrow">What's new</p>
     <h2>Recent releases.</h2>
     <div class="notes" id="notes">
-      <p><b>1.6.77</b> · CartoTable: saving a typed trip now compiles it, as Walls does. Reckon lists what it found; tick what it should fix, untick to accept a reading, or open the line to fix it by hand. Enter a trip starts in feet and fills in the book prefix. Home has one tile per job.</p>
-      <p><b>1.6.76</b> · CartoTable: with elevation loaded, a station shows how far below the ground it is; Profile cut draws the ground along a line with the passages beneath it.</p>
-      <p><b>1.6.75</b> · CartoTable: an Exports page for the whole cave or a box drawn on the plot, in every format, and a printout of the map with its layers.</p>
+      <p><b>1.6.91</b> · CartoTable: a Layers chip on the plot turns station names, leads, blunder marks, lead search areas and each map layer on and off.</p>
+      <p><b>1.6.90</b> · CartoTable: Survey data opens on Books - each survey as a field book with its date, team, length, grade and leads; open one and the map goes to that trip.</p>
+      <p><b>1.6.89</b> · CartoTable: one viewer for the plot and 3-D, the 95 % uncertainty round a station, and trips graded by their loops and backsights.</p>
     </div>
   </div>
 </section>
 
 </main>
+<script>
+(function(){
+ var ua=navigator.userAgent,ios=/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1),and=/Android/.test(ua);
+ // a phone: its own section first
+ if(ios||and){var p=document.getElementById('phone'),c=document.getElementById('computer');var n=p;var nodes=[];while(n&&n.id!=='firmware'){nodes.push(n);n=n.nextElementSibling;}nodes.forEach(function(x){c.parentNode.insertBefore(x,c);});
+  var me=document.getElementById(ios?'pIos':'pAnd');me.parentNode.insertBefore(me,me.parentNode.firstChild);}
+ // the newest Windows release, from the file Topside itself reads
+ fetch('https://raw.githubusercontent.com/p0sull02/tacheo-topside-releases/main/latest.txt',{cache:'no-store'}).then(function(r){return r.ok?r.text():null;}).then(function(t){if(!t)return;
+  var v=(t.match(/^version:\s*(\S+)/m)||[])[1],d=(t.match(/^date:\s*(\S+)/m)||[])[1],u=(t.match(/^url:\s*(\S+)/m)||[])[1];
+  if(v)document.getElementById('ver').innerHTML='Tacheo Topside <b>'+v+'</b>'+(d?' · '+d:'')+': the same files Topside updates itself from.';
+  if(u&&/^https:\/\/github\.com\/p0sull02\/tacheo-topside-releases\//.test(u))document.getElementById('winBtn').href=u;}).catch(function(){});
+ fetch('/cartotable-app/version.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(j){if(j&&j.android){var e=document.getElementById('pAnd').querySelector('p');e.textContent='Version '+j.android.versionName+'. Android 7 or later. About 0.2 MB.';}}).catch(function(){});
+ // iPhone: hand Safari the profile as a configuration profile (GitHub Pages labels it a plain download)
+ document.getElementById('iosBtn').onclick=function(ev){if(!ios)return;ev.preventDefault();fetch('/cartotable-app/Topside.mobileconfig').then(function(r){return r.blob();}).then(function(b){location.href=URL.createObjectURL(new Blob([b],{type:'application/x-apple-aspen-config'}));}).catch(function(){location.href='/cartotable-app/Topside.mobileconfig';});};
+})();
+</script>
 
 <footer>
   <div class="wrap">
     <div class="fcols">
       <div><b>Tacheo</b><a href="tacheo.html">The instrument</a><a href="tacheo.html#specs">Specifications</a><a href="reserve.html">Reserve one</a></div>
-      <div><b>Software</b><a href="topside.html">Tacheo Topside</a><a href="cartotable.html">CartoTable</a><a href="download.html">Download</a></div>
-      <div><b>Help</b><a href="support.html">Support and FAQ</a><a href="support.html#message">Message Sully</a><a href="download.html#windows-warning">If Windows warns you</a></div>
+      <div><b>Software</b><a href="topside.html">Tacheo Topside</a><a href="cartotable.html">CartoTable</a><a href="phone.html">Phone app</a><a href="download.html">Downloads</a></div>
+      <div><b>Help</b><a href="support.html">Support and FAQ</a><a href="support.html#message">Message Sully</a><a href="https://p0sull02.github.io/cartotable-app/help.html">Phone app help</a><a href="download.html#windows-warning">If Windows warns you</a></div>
       <div><b>More</b><a href="about.html">About</a><a href="about.html#log">Development log</a><a href="privacy.html">Privacy</a></div>
     </div>
     <p>Tacheo 2 is in production design: pictures and screens are design renders, and specifications may change before the first run ships. Reading other makers' instruments is in beta. Laser product: do not stare into the beam.</p>

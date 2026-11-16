@@ -343,3 +343,40 @@ footer .fcols a:hover{text-decoration:underline}
 .landing-bar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px}
 .lnav{display:flex;flex-wrap:wrap;gap:10px}
 .landing-bar p{font-size:15px}
+
+/* 16 Nov 2026 (Sully: "Have a landing page/home page with links to a download page, an info page ... Right now it's like a poster page"):
+   the home page as a hub - a short hero, the three products as picture cards, everything else as link cards, the current versions */
+.homehero{padding:64px 0 44px;border-top:0;background:radial-gradient(ellipse 70% 70% at 78% 40%,#2F3236 0%,var(--body) 70%)}
+.homehero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.homehero h1{font-weight:900;font-size:clamp(52px,7vw,92px);line-height:.88;margin:0 0 14px}
+.homehero .tag{font-size:clamp(22px,2.6vw,30px);margin:0 0 14px}
+.homehero .sub{display:block;color:var(--ink2);max-width:54ch;font-size:17px;margin-bottom:0}
+.homehero img{border-radius:6px}
+@media (max-width:860px){.homehero .wrap{grid-template-columns:1fr}.homehero{padding-top:36px}}
+.hub{padding:56px 0}
+.hub h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 6px}
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.prod{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--rule);border-radius:6px;overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.prod:hover{border-color:var(--orange)}
+.prod.c:hover{border-color:var(--blue)}
+.prod img{aspect-ratio:16/10;object-fit:cover;width:100%;background:var(--deck)}
+.prod div{padding:18px 20px 20px}
+.prod h3{font-size:30px;font-weight:800;margin:0 0 6px}
+.prod.c h3{color:var(--blue2)}
+.prod p{color:var(--ink2);font-size:15.5px;margin:0 0 12px}
+.prod .go{font-family:var(--mono);font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange)}
+.prod.c .go{color:var(--blue2)}
+@media (max-width:860px){.prods{grid-template-columns:1fr}}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:24px}
+.lk{display:block;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:18px 20px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.lk:hover{border-color:var(--orange)}
+.lk b{display:block;font-family:var(--display);font-style:italic;font-weight:800;font-size:23px;margin-bottom:4px}
+.lk span{color:var(--ink2);font-size:15px}
+.lk.main{background:#2a1f18;border-color:var(--orange)}
+.vers{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:20px}
+.vers div{border-left:3px solid var(--rule);padding:4px 0 4px 14px}
+.vers b{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);font-weight:700}
+.vers span{font-size:17px}
+/* download page: phone apps and the "comes with Topside" notes */
+.plat .steps{margin-top:10px;font-size:14.5px}
+.plat .note{color:var(--ink2);font-size:14px;margin:8px 0 0}
