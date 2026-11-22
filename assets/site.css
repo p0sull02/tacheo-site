@@ -107,7 +107,7 @@ dl.spec dt{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing
 .views figure{margin:0;background:var(--deck);border:1px solid var(--rule);border-radius:6px;padding:18px}
 .views figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--ink2);margin-top:8px}
 
-/* topside */
+/* tacheo */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-top:36px}
 .card{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:22px}
 .card h3{margin-bottom:8px}
@@ -146,7 +146,7 @@ footer p{font-size:13.5px;color:var(--ink2);max-width:90ch}
 
 /* ---- added 14 Nov 2026: CartoTable, the family strip, downloads ---- */
 :root{
-  --blue:#2F80ED;      /* CartoTable's accent: Topside is orange, CartoTable is blue */
+  --blue:#2F80ED;      /* CartoTable's accent: Tacheo is orange, CartoTable is blue */
   --blue2:#7DB3FF;
 }
 .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:12px 18px;border-radius:3px;background:var(--orange);color:#120A05;border:1px solid var(--orange)}
@@ -178,9 +178,9 @@ header.top .btn{padding:8px 12px;font-size:11.5px}
 .shot img{border-radius:3px}
 .shot figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink2);margin-top:8px}
 
-/* topside block additions */
-.topside-top{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-@media (max-width:860px){.topside-top{grid-template-columns:1fr}}
+/* tacheo block additions */
+.tacheo-top{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media (max-width:860px){.tacheo-top{grid-template-columns:1fr}}
 .card.ct{border-color:#2B4C7A;background:#1E2836}
 .card.ct h3{color:var(--blue2)}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
@@ -377,6 +377,6 @@ footer .fcols a:hover{text-decoration:underline}
 .vers div{border-left:3px solid var(--rule);padding:4px 0 4px 14px}
 .vers b{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);font-weight:700}
 .vers span{font-size:17px}
-/* download page: phone apps and the "comes with Topside" notes */
+/* download page: phone apps and the "comes with Tacheo" notes */
 .plat .steps{margin-top:10px;font-size:14.5px}
 .plat .note{color:var(--ink2);font-size:14px;margin:8px 0 0}
